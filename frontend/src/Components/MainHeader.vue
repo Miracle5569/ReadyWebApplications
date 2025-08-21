@@ -3,11 +3,22 @@
 <template>
   <div class="header">
     <div class="header__inner container">
-      <span class="header__logo">Готовые веб-приложения</span>
+      <a class="header__logo" href="/">
+        <img
+          class="header__image"
+          src="/icons/check-mark-svgrepo-com.svg"
+          alt="Complete Web-Applications"
+          loading="lazy"
+          width="30"
+          height="15"
+        />
+      </a>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item">Вход</li>
-          <li class="header__menu-item">Регистрация</li>
+          <li class="header__menu-item">Домой</li>
+          <li class="header__menu-item">Каталог приложений</li>
+          <li class="header__menu-item">О нас</li>
+          <li class="header__menu-item">Контакты</li>
         </ul>
       </nav>
     </div>
@@ -28,7 +39,6 @@
 
   &__logo {
     font-size: 20px;
-    // font-weight: 600;
   }
 
   &__menu {
@@ -36,11 +46,15 @@
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
-      width: 200px;
     }
 
     &-item {
       padding: 5px 10px;
+      margin-right: 29px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
 
       @include media.hover {
         border-radius: 20px;

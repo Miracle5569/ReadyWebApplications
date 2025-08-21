@@ -10,9 +10,4 @@ import MainHeader from './Components/MainHeader.vue'
   </div>
 </template>
 
-<style scoped lang="scss">
-#app {
-  font-size: 18px;
-  font-family: 'Ubuntu';
-}
-</style>
+<style scoped lang="scss"></style>
